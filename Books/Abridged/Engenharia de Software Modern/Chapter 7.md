@@ -21,4 +21,30 @@ Esse padrão facilita a separação de responsabilidades, permitindo múltiplas 
 
 ### 2.3 Arquitetura baseada em Microsserviços  
 Divide o sistema em módulos independentes (serviços autônomos), que se comunicam por APIs.  
-  
+**Vantagens:**  
+- Escalabilidade granular.  
+- Releases independentes para cada serviço.  
+- Flexibilidade para uso de diferentes tecnologias.  
+**Desafios:**  
+- Comunicação distribuída aumenta a complexidade.  
+- Latência nas interações entre serviços.  
+- Dificuldade em gerenciar transações distribuídas.  
+
+### 2.4 Arquitetura Orientada a Mensagens  
+Utiliza filas de mensagens para comunicação assíncrona entre clientes e servidores.  
+**Benefícios:**  
+- Desacoplamento no espaço: cliente e servidor não precisam se conhecer.  
+- Desacoplamento no tempo: clientes podem continuar funcionando mesmo se o servidor estiver fora do ar.  
+Essa abordagem melhora a escalabilidade e resiliência do sistema.  
+
+### 2.5 Arquitetura Publish/Subscribe  
+Baseia-se na troca de eventos entre publicadores e assinantes, permitindo que múltiplos sistemas sejam notificados simultaneamente sobre um evento específico.  
+**Diferente das Filas de Mensagens:**  
+- Os eventos são distribuídos para múltiplos assinantes.  
+- Assinantes recebem notificações assíncronas em tempo real.  
+Exemplo: um sistema de reservas de passagens pode notificar diferentes serviços, como sistema de milhagens, contabilidade e marketing.  
+
+### 2.6 Outros Padrões Arquiteturais  
+- **Pipes & Filtros**: fluxo de dados processado em etapas independentes (exemplo: comandos Unix).  
+- **Cliente/Servidor**: arquitetura clássica onde clientes solicitam serviços a um servidor remoto.  
+- **Peer-to-Peer (P2P)**: sistemas descentralizados onde cada nó pode atuar como cliente e servidor (exemplo: torrents).  
