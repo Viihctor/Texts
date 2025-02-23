@@ -110,3 +110,24 @@ Code smells são sinais de que um código precisa ser refatorado. Alguns exemplo
 - **Classes Grandes**: Podem ser divididas usando **Extração de Classe**.  
 - **Feature Envy**: O método pode ser movido para outra classe com **Movimentação de Método**.  
 - **Variáveis Globais**: Devem ser encapsuladas em classes específicas.  
+
+## 4. Estratégias para Aplicação de Refactoring  
+
+### 4.1 Refactoring Oportunista  
+- Realizado durante a implementação de novas funcionalidades.  
+- Pequenos ajustes no código para evitar o acúmulo de problemas.  
+
+### 4.2 Refactoring Planejado  
+- Realizado como uma **tarefa separada**, em situações onde grandes melhorias na estrutura do sistema são necessárias.  
+
+**Recomenda-se combinar ambos os tipos para manter o código saudável!**  
+
+## 5. Ferramentas para Refactoring  
+A maioria das **IDEs modernas** (Eclipse, IntelliJ, Visual Studio) oferecem suporte a refactorings automáticos, como:  
+- **Renomeação de métodos e variáveis**.  
+- **Extração de métodos e classes**.  
+- **Movimentação de métodos entre classes**.  
+- **Detecção de código duplicado**.  
+
+Essas ferramentas ajudam a evitar erros e garantem que a refatoração *preserve o comportamento original do sistema.  
+
