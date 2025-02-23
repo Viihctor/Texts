@@ -65,3 +65,48 @@ class Cliente {
   Endereco endereco;
 }
 ```
+
+### 2.4 Extração de Classe  
+Quando uma classe tem muitas responsabilidades, uma parte dela pode ser movida para uma nova classe.  
+
+**Exemplo Antes:**  
+```java
+class Cliente {
+  String nome;
+  String telefone;
+  String email;
+}
+```
+**Após Refatoração:**  
+```java
+class Contato {
+  String telefone;
+  String email;
+}
+
+class Cliente {
+  String nome;
+  Contato contato;
+}
+```
+
+### 2.5 Renomeação de Método ou Variável  
+Melhora a clareza do código alterando nomes pouco intuitivos.  
+
+**Exemplo Antes:**  
+```java
+void c() { /* código */ }
+```
+**Após Refatoração:**  
+```java
+void calcularTotal() { /* código */ }
+```
+
+## 3. Code Smells (Indícios de Código Ruim)  
+Code smells são sinais de que um código precisa ser refatorado. Alguns exemplos incluem:  
+
+- **Código Duplicado**: Pode ser eliminado com **Extração de Método**.  
+- **Métodos Longos**: Melhorados com **Extração de Método** para dividir em partes menores.  
+- **Classes Grandes**: Podem ser divididas usando **Extração de Classe**.  
+- **Feature Envy**: O método pode ser movido para outra classe com **Movimentação de Método**.  
+- **Variáveis Globais**: Devem ser encapsuladas em classes específicas.  
