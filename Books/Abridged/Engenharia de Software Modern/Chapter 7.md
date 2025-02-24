@@ -1,8 +1,12 @@
 # Capítulo 7 – Arquitetura  
 
-## 1. Introdução à Arquitetura de Software  
-A arquitetura de software é definida como o **projeto em mais alto nível** de um sistema, focando na organização de módulos, componentes, subsistemas e serviços. Ela também envolve **decisões críticas**, como a escolha da linguagem de programação e banco de dados, que dificilmente podem ser revertidas no futuro.  
+## 1.Arquitetura de Software
 
+A arquitetura de software é o planejamento estrutural de um sistema, definindo a organização dos seus componentes e a interação entre eles. Uma boa arquitetura facilita a manutenção, escalabilidade e evolução do software. Empresas que desenvolvem sistemas complexos, como bancos e plataformas de e-commerce, precisam de arquiteturas bem definidas para suportar alto volume de acessos e transações.
+
+#### Aplicação no Mercado
+
+Um exemplo prático é a construção de um sistema de vendas online. A utilização de uma Arquitetura em Camadas permitiria separar a interface do usuário, as regras de negócio e o banco de dados, garantindo maior flexibilidade e segurança. Já para empresas que lidam com múltiplos serviços, como Netflix e Amazon, a Arquitetura de Microsserviços permite escalar diferentes módulos separadamente, evitando que um erro em um serviço afete todo o sistema.
 ## 2. Padrões Arquiteturais  
 
 ### 2.1 Arquitetura em Camadas  
