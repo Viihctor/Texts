@@ -1,3 +1,5 @@
+## **1. Introdução**
+
 A arquitetura de microserviços surgiu como uma alternativa ao modelo monolítico tradicional, permitindo que sistemas sejam compostos por serviços independentes, cada um executando seu próprio processo e se comunicando por meio de APIs leves (geralmente HTTP). Essa abordagem melhora a escalabilidade, a resiliência e a velocidade de desenvolvimento de aplicações.  
 
 Fowler compara os microserviços aos sistemas monolíticos, que são construídos como uma única unidade. Embora monólitos possam ser eficazes, sua manutenção torna-se complexa à medida que o sistema cresce. Os microserviços, por outro lado, permitem modularidade e facilidade de mudanças.  
@@ -78,3 +80,9 @@ Fowler compara os microserviços aos sistemas monolíticos, que são construído
  **Gerenciamento de Dados** – A descentralização exige soluções para garantir integridade e consistência dos dados.  
  **Comunicação entre Serviços** – O tráfego entre APIs pode gerar latência e dificultar o rastreamento de problemas.  
  **Monitoramento e Depuração** – Precisam de ferramentas como **ELK Stack, Prometheus, Zipkin** para rastrear logs e chamadas distribuídas.  
+
+## **5. Conclusão**
+
+Ao aprender sobre microserviços, dá para perceber que eles são uma forma mais moderna e eficiente de construir sistemas. Diferente dos modelos antigos, onde tudo era feito em um único bloco (monolito), os microserviços dividem o sistema em partes menores e independentes, que se comunicam entre si. Isso facilita a manutenção, permite que cada parte seja atualizada separadamente e torna o sistema mais flexível e resistente a falhas.
+
+No entanto, essa abordagem também traz desafios, como a necessidade de gerenciar várias conexões entre serviços e garantir que os dados fiquem organizados. Além disso, exige o uso de ferramentas como Docker, Kubernetes e sistemas de monitoramento para garantir que tudo funcione bem.
